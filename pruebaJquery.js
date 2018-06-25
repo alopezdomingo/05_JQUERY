@@ -66,5 +66,5 @@ function aumentarTexto(){
 function cargarEncuesta(){
 	var encuesta;
 	encuesta = $('#encuesta');
-	encuesta.html('<form><input type="text" placeholder="ingrese nombre"><br><br><input type="text" placeholder="ingrese provincia"></form>');
+	encuesta.html('<form> <div class="form-group"><input type="text" class="form-control" placeholder="Nombre"></div><div class="form-group"><input type="text" class="form-control" placeholder="Provincia"></div></form>');
 }
