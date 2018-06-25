@@ -22,6 +22,9 @@ function iniciar()
 	var aumento;
 	aumento = $('#aumentar2');
 	aumento.click(aumentarTexto);
+	var boton;
+	boton = $('#boton');
+	boton.click(cargarEncuesta);
 }
 function marcar()
 {
@@ -59,4 +62,9 @@ function aumentarTexto(){
 	var aumento;
 	aumento = $('#aumentar2');
 	aumento.css("font-size","50px ");
+}
+function cargarEncuesta(){
+	var encuesta;
+	encuesta = $('#encuesta');
+	encuesta.html('<form><input type="text" placeholder="ingrese nombre"><br><br><input type="text" placeholder="ingrese provincia"></form>');
 }
