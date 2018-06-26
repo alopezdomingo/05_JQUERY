@@ -25,6 +25,12 @@ function iniciar()
 	var boton;
 	boton = $('#boton');
 	boton.click(cargarEncuesta);
+	var bregistro;
+	bregistro = $('#bregistro');
+	bregistro.click(cargarRegistro);
+	var blogin;
+	blogin = $('#blogin');
+	blogin.click(cargarLogin);
 }
 function marcar()
 {
@@ -67,4 +73,14 @@ function cargarEncuesta(){
 	var encuesta;
 	encuesta = $('#encuesta');
 	encuesta.html('<form> <div class="form-group"><input type="text" class="form-control" placeholder="Nombre"></div><div class="form-group"><input type="text" class="form-control" placeholder="Provincia"></div></form>');
+}
+function cargarRegistro(){
+	var registro;
+	registro = $('#verregistro');
+	registro.html('<form> <div class="form-group"><input type="text" class="form-control" placeholder="Nombre"></div><div class="form-group"><input type="email" class="form-control" placeholder="eMail"></div><div class="form-group"><input type="password" class="form-control" placeholder="Contraseña"></div><div class="form-group"><input type="password" class="form-control" placeholder="Repita contraseña"></div></form>');
+}
+function cargarLogin(){
+	var registro;
+	registro = $('#verlogin');
+	registro.html('<form> <div class="form-group"><input type="email" class="form-control" placeholder="eMail"></div><div class="form-group"><input type="password" class="form-control" placeholder="Contraseña"></div></form>');
 }
