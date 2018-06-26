@@ -35,8 +35,10 @@ function iniciar()
 	blogin.dblclick(borrarLogin);
 	var bQuitarClase = $('#bQuitarClase');
 	var bAgregarClase = $('#bAgregarClase');
+	var bCambiarClase = $('#bCambiarClase');
 	bQuitarClase.click(quitarClase);
-	bAgregarClase.click(agregarClase)
+	bAgregarClase.click(agregarClase);
+	bCambiarClase.click(cambiarClase);
 }
 function marcar()
 {
@@ -107,4 +109,16 @@ function quitarClase(){
 function agregarClase(){
 	var par = $("#parrafo");
 	par.addClass("formato2");
+}
+function comprobarClase(){
+	var par = $('#parrafo');
+	if (par.hasClass("formato1")){
+		alert("tiene clase");
+	}else{
+		alert("NO tiene clase");
+	}
+}
+function cambiarClase(){
+	var par = $("#parrafo");
+	par.toggleClass("formato2");
 }
