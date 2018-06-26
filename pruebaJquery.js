@@ -28,9 +28,15 @@ function iniciar()
 	var bregistro;
 	bregistro = $('#bregistro');
 	bregistro.click(cargarRegistro);
+	bregistro.dblclick(borrarRegistro);
 	var blogin;
 	blogin = $('#blogin');
 	blogin.click(cargarLogin);
+	blogin.dblclick(borrarLogin);
+	var bQuitarClase = $('#bQuitarClase');
+	var bAgregarClase = $('#bAgregarClase');
+	bQuitarClase.click(quitarClase);
+	bAgregarClase.click(agregarClase)
 }
 function marcar()
 {
@@ -79,8 +85,26 @@ function cargarRegistro(){
 	registro = $('#verregistro');
 	registro.html('<form> <div class="form-group"><input type="text" class="form-control" placeholder="Nombre"></div><div class="form-group"><input type="email" class="form-control" placeholder="eMail"></div><div class="form-group"><input type="password" class="form-control" placeholder="Contraseña"></div><div class="form-group"><input type="password" class="form-control" placeholder="Repita contraseña"></div></form>');
 }
+function borrarRegistro(){
+	var registro;
+	registro = $('#verregistro');
+	registro.html('')
+}
 function cargarLogin(){
 	var registro;
 	registro = $('#verlogin');
 	registro.html('<form> <div class="form-group"><input type="email" class="form-control" placeholder="eMail"></div><div class="form-group"><input type="password" class="form-control" placeholder="Contraseña"></div></form>');
+}
+function borrarLogin(){
+	var registro;
+	registro = $('#verlogin');
+	registro.html('');
+}
+function quitarClase(){
+	var par = $("#parrafo");
+	par.removeClass("formato1");
+}
+function agregarClase(){
+	var par = $("#parrafo");
+	par.addClass("formato2");
 }
