@@ -19,6 +19,11 @@ function iniciar()
 	var mostrarH = $('#mostrarH');
 	ocultarH.click('ocultarH');
 	mostrarH.click('mostrarH');
+
+	var botonFOut = $('#bFout');
+	var mostrar2 = $('#bFin');
+	botonFOut.click(elementoFadeout);
+	mostrar2.click(elementoFadein);
 }
 
 function ocultarElemento(){
@@ -49,4 +54,12 @@ function cambiarForm1(){
 function cambiarForm2(){
 	var formato = $("#cuadro");
 	formato.toggleClass("formato2");
+}
+function elementoFadeout(){
+	var capa = $("#fondoFade");
+	capa.fadeOut("slow");
+}
+function elementoFadein(){
+	var capa = $("#fondoFade");
+	capa.fadeIn("slow");
 }
