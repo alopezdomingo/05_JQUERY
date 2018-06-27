@@ -24,6 +24,9 @@ function iniciar()
 	var mostrar2 = $('#bFin');
 	botonFOut.click(elementoFadeout);
 	mostrar2.click(elementoFadein);
+
+	var boton9 = $('#bOcultarInput');
+	boton9.click(ocultarInput);
 }
 
 function ocultarElemento(){
@@ -62,4 +65,18 @@ function elementoFadeout(){
 function elementoFadein(){
 	var capa = $("#fondoFade");
 	capa.fadeIn("slow");
+}
+function ocultarInput(){
+	var num =$("input#inputD").val();
+	var capa = $('#inputD');
+	capa.fadeOut(5000,mostrar5s);
+}
+function mostrar5s(){
+	var num =$("input#inputD").val();
+	if (num>10) {
+		alert("Has escrito el número "+num + " ES MAYOR QUE 10");
+	}else{
+		alert("Has escrito el número "+num + " ES MENOR QUE 10");
+	}
+	
 }
