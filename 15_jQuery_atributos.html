@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>04. jQuey | CLASES</title>
+	<title>15. jQuery | ATRIBUTOS</title>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -10,32 +10,44 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 	<script	src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="pruebaJquery.js"></script>
+	<script type="text/javascript" src="pruebaJquery4.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<style type="text/css">
-		.formato1{
-			color: #9E598F;
-		}
-		.formato2{
-			color: #68C3CB;
-		}
-		.formato3{
-			color: #FF777A;
-		}
-	</style>
+
 </head>
 <body>
-	<header><h1 class="ml-5">04. jQuery Clases</h1></header>
+	<header><h1 class="ml-5">15. jQuery ATRIBUTOS</h1></header>
 	<div class="container">
 	  <div class="row">
-	    <div class="col-md-12">
-	    	<p class="formato1 mt-4" id="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum perferendis quae et facere voluptatum laboriosam eaque quia eos, obcaecati, molestias aut distinctio vel non illum nemo impedit necessitatibus repellendus inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id ea architecto suscipit deleniti iusto voluptas qui, consequatur culpa, debitis non est modi porro, et vitae accusamus enim distinctio voluptates iure?</p>
-	    	<center>
-	    		<button type="button" class="btn btn-danger mt-4" id="bQuitarClase">Quitar Clase CSS</button>
-	    		<button type="button" class="btn btn-success mt-4" id="bAgregarClase">Agregar Clase CSS</button>
-	    		<button type="button" class="btn btn-info mt-4" id="bCambiarClase">Cambiar Clase CSS</button>
-	    	</center>
+	    <div class="col-md-12 mt-4">
+	    	<table class="table" id="tabla">
+				  <thead>
+				    <tr>
+				      <th scope="col">#</th>
+				      <th scope="col">First</th>
+				      <th scope="col">Last</th>
+				      <th scope="col">Handle</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row">1</th>
+				      <td>Mark</td>
+				      <td>Otto</td>
+				      <td><a id="enlace">@ald</a></td>
+				    </tr>
+				      <tr>
+				      <th scope="row">2</th>
+				      <td>Ana</td>
+				      <td>López</td>
+				      <td><a id="enlace">@ald</a></td>
+				    </tr>
+				  </tbody>
+			</table>
+			<center>
+				<button type="button" class="btn btn-info mt-4" id="boton1">Agregar borde</button>
+				<button type="button" class="btn btn-info mt-4" id="boton2">Quitar borde</button>
+			</center>
 	    </div>
 	  </div>
 	</div>
