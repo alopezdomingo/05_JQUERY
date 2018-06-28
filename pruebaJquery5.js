@@ -5,6 +5,7 @@ documento.ready(iniciar);
 function iniciar(){
 	$("#boton").click(verificar);
 	$("#boton2").click(seleccionarP);
+	$(".pelis").click(seleccionarPelisII)
 }
 function verificar()
 {
@@ -47,4 +48,9 @@ function seleccionarP(){
 		}
 	}
 }
+function seleccionarPelisII(){
+	if ($(this).prop("checked")){
+				$("#demo").text("Has seleccionado: "+ $(this).val());
 
+	}
+}
